@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Trang Web bán sách online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link href="css/ion.rangeSlider.css" rel="stylesheet">
+	<link href="css/ion.rangeSlider.skin.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<style>
+	body{
+		background-color: #eee;
+	}
+</style>
+</head>
+<body>
+	<!--Header-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 bottombor">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="wellcome">
+								<p>WELLCOME TO GTHBOOKS</p>
+							</div>
+						</div>
+						<div class="col-lg-6 dangki">
+							<nav>
+								<ul>
+									<li><a href="dangky.html" style="border-right:1px solid black;padding-right: 5px;font-size: 16px;font-weight: bold;">Đăng Ký </a></li>
+									<li class="nav-item dropdown"> <a style="font-size: 16px" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Đăng nhập</a>
+										<div class="dropdown-menu" style="min-width: 250px;">
+											<div class="container">
+												<div class="form-group">
+													<label for="tenTK">Tên tài khoản:</label>
+													<input type="text" name="tenTK" class="form-control" />
+												</div>
+												<div class="form-group">
+													<label for="matKhau">Mật khẩu:</label>
+													<input type="password" name="matKhau" class="form-control" />
+												</div>
+												<div class="form-group">
+													<button class="btn btn-primary">Đăng nhập</button>
+												</div>
+												<div class="form-group"> <a href="#">Quên mật khẩu?</a> </div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-sm navbar-light bg-faded col-lg-12">
+				<div class="col-lg-2 logoo">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt="logo"></a>
+				</div>
+				<!-- Links -->
+				<div class="col-lg-7">
+					<div class="collapse navbar-collapse" id="nav-content">   
+						<ul class="navbar-nav ">
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html">TRANG CHỦ</a>
+							</li>
+							<li class="nav-item dropdown hovermenu">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+									SÁCH NƯỚC NGOÀI
+								</a>
+								<div class="dropdown-menu" aria-labelledby="Preview">
+									<a class="dropdown-item" href="#">SÁCH TIẾNG NHẬT</a>
+									<a class="dropdown-item" href="#">SÁCH TIẾNG ĐỨC</a>
+									<a class="dropdown-item" href="#">SÁCH TIẾNG ANH</a>
+								</div>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html#tlkn">TÂM LÝ-KỸ NĂNG</a>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html#na">SÁCH MỚI</a>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link " href="tintuc.html">
+									TIN TỨC
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="timkiem">
+						<input id="timkiem" type="text" name="timkiem" placeholder="Tên Sách cần tìm">
+						<a href="timkiem.html"><i class="fas fa-search rights"></i></a>
+					</div>
+					<div class="giohang">
+						<i class="fas fa-shopping-cart img-fluid" style="max-width: 100%;"></i>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!--header-->
+	<!--body-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" style="background-color:#ecf0f5">
+				<div class="row">
+					<div class="col-md-8">
+						<div  style="background-color:white;padding: 20px;border-radius: 15px;">
+							<div id="line137">
+								<a  href="index.html">
+									<i class="fas fa-home"></i>
+									Trang chủ
+								</a>
+								<em style="color:#999999;">/</em>
+								<span style="color:#999999;">Tin tức về sách</span>
+								<em style="color:#999999;">/</em>
+								<span style="color:#999999;">Đường sách TP.HCM năm 2017 thu 50 tỷ, gấp đôi năm 2016</span>
+							</div>
+							<div>
+								<h3>Đường sách TP.HCM năm 2017 thu 50 tỷ, gấp đôi năm 2016</h3>
+								<div style="font-size: 12px;">
+									<i class="fas fa-user-circle"></i>
+									<span style="padding-right: 5px;">
+										<a style="color:black;font-weight: 500;" title="John Vu" href="#">Vnwriter</a>
+									</span>
+
+									<span><i  class="fas fa-clock"></i>Tháng Hai 2, 2018</span>
+								</div>
+							</div>
+							<hr>
+							<img style="width: 100%;" src="images/tintuc/tintuc2/tintuc2-1.jpg" alt="imgtintuc1" class="img-fluid">
+							<p><b>Năm 2017, Đường sách TP.HCM (Nguyễn Văn Bình) thu hút 2,4 triệu lượt người đến thăm, đạt doanh thu 50 tỷ đồng, tăng gần gấp đôi so với năm ngoái.</b></p>
+							<p style="padding-top: 15px;">Theo báo cáo của Văn phòng phía Nam Hội Xuất bản Việt Nam, năm 2017, Đường sách TP.HCM đã có hoạt động khởi sắc. Cụ thể, trong năm qua, đây là nơi tổ chức 167 sự kiện ra mắt sách, giao lưu tác giả, góp phần phát triển văn hóa đọc tại Việt Nam.
+							</p>
+							<p>Số lượng khách ghé thăm Đường sách cũng tăng mạnh. Cụ thể, lượng khách trung bình trong ngày thường là 5.000 – 6.000 lượt người, trong ngày nghỉ là 10.000 lượt người. Tổng cộng, có khoảng 2,4 triệu lượt người ghé thăm Đường sách năm qua.</p>
+							<p>Điều đó kéo theo doanh thu của Đường sách tăng từ 26,4 tỷ đồng của năm 2016 lên 50 tỷ đồng của năm 2017.</p>
+							<div>
+								<div  style="padding:15px">
+									<img  style="width: 100%;" src="images/tintuc/tintuc2/tintuc2-1.jpg" alt="imgtintuc1">
+									<p class="ghichuhinhanh">Hình 1:Đường sách Sài Gòn đã thành điểm dừng chân quen thuộc của nhiều người.</p>
+									
+								</div>
+							</div>
+							<p>
+								Đây là thành quả dễ hiểu sau một năm Đường sách TP.HCM có nhiều cải tiến, thay đổi tích cực. Ban điều hành Đường sách TP.HCM đã cho tăng cường các tiểu cảnh cây xanh giữa lòng đường đi bộ, mở thêm nhiều không gian dừng chân đọc sách cho các độc giả, bố trí dù che nắng mưa cho các sự kiện.
+							</p>
+							<p>Bên cạnh đó, sự đa dạng trong các hoạt đông cũng góp phần thu hút khách tham quan. Đó là 16 triển lãm sách và ảnh trong năm 2017 bao gồm: Việt Nam miền ngon, Giữ gìn di sản Sài Gòn, Về chốn thư hiên, Việt Nam nhìn từ trên cao, Âm thanh Hội họa…</p>
+							<p>Văn phòng phía nam Hội Xuất bản Việt Nam cũng tự hào vì đã đưa Đường sách TP.HCM thành nơi gặp gỡ, giao lưu quen thuộc của người dân Sài Gòn và người dân từ xa đến.</p>
+							<p>Khép lại năm 2017 thành công, Hội chỉ đạo ban điều hành Đường sách tiếp tục duy trì hoạt động và tham vấn mở thêm đường sách tại các thành phố trực thuộc trung ương như Vũng Tàu, Huế, Đà Nẵng, Cần Thơ, Đà Lạt…</p>
+							<p>Tháng 4/2018, Đường sách Vũng Tàu sẽ được khánh thành. Đường sách thứ hai của TP.HCM đặt tại quận 7 cũng đang được xây dựng.</p>
+							<div style="float: right;">
+								<b>Mi Ly</b>
+							</div>
+						</div>
+						<div style="padding-top:15px;">
+							<hr>
+							<h4>BÌNH LUẬN</h4>
+						</div>
+						<form  onsubmit="return ValidateForm()" method="post" accept-charset="utf-8">
+							<div style="background-color:white;padding: 20px;">
+								<div>
+									<label>Nội dung bình luận</label>
+									<textarea id="ykien" name="txtbinhluan" required="required" maxlength="7000" style="width:100%;padding:15px;font-size: 13px;" placeholder="Bình luận tại đây..."></textarea>
+									<p id="thongbaoykien"></p>
+								</div>
+								<div>
+									<label>Tên</label>
+									<input style="width:100%;padding:5px;font-size: 13px;" type="text"  name="name" placeholder="Nhập Tên"><br>
+								</div>
+								<div>
+									<label>Email</label>
+									<input style="width:100%;padding:5px;font-size: 13px;" type="text" name="txtemail" required="required" id="email" placeholder="Nhập Email">
+									<p id="thongbaoemail"></p>
+								</div>
+								<button type="submit">Gửi Bình Luận</button>
+							</div>
+						</form>
+						<hr>
+						<div>
+							<h4>NHỮNG BÌNH LUẬN KHÁC</h4>
+						</div>
+						<div style="background-color:white;padding: 20px;">
+							<div style="border-bottom: 2px solid #f0f3f0">
+								<div>
+									<h5 style="font-size:20px">
+										Alex
+										<span style="float:right">Tháng Ba 20, 2018</span>
+									</h5>
+								</div>
+								<p>
+									Sed ut perspiciatis unde omnis iste na tus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+								</p>
+								<a href="#">Reply</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div  style="background-color:white;padding: 10px;border-radius: 15px;">
+							<div style="border: 1px solid black;background-color:black;color:white;padding:5px;border-radius: 6px;">
+								<h6><i class="fas fa-shopping-bag"></i> Khuyên Đọc</h6>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_3.jpg" alt="khuyendoc1" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>Guillaume Musso:Central Park</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_13.jpg" alt="khuyendoc2" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>The New Conceptual Selling</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_18.jpg" alt="khuyendoc3" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>Sydney Shelldon: Nếu Còn ngày mai</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_4.jpg" alt="khuyendoc4" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>Trò Chơi Cấm - Dị Giới</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end body-->
+	<!-- Footer-->
+
+	<footer id="footer">
+		<div class="container footer">
+			<div class="row">
+				<div class="col-md-12 footer-title">
+					<h2>
+						<span>GTH</span>
+						Books
+					</h2>
+				</div>
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="footer-static-title">
+								<h3>Về GTHBooks</h3>
+							</div>
+							<div class="footer-static-content">
+								<ul>
+									<li>
+										<a href="#">Điều khoản sử dụng</a>
+									</li>
+									<li>
+										<a href="#">Chính sách bảo mật</a>
+									</li>
+									<li>
+										<a href="#">Tuyển dụng</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="footer-static-title">
+								<h3>Hỗ trợ</h3>
+							</div>
+							<div class="footer-static-content">
+								<ul>
+									<li>
+										<a href="#">Chính sách đổi-trả-hoàn tiền</a>
+									</li>
+									<li>
+										<a href="#">Phương thức vận chuyển</a>
+									</li>
+									<li>
+										<a href="#">Phương thức thanh toán</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="footer-static-title">
+								<h3>Liên hệ</h3>
+							</div>
+							<div class="footer-static-content">
+								<ul>
+									<li>
+										<i class="fas fa-map-marker"></i>
+										<span>Địa chỉ:</span>
+										71/70 Trần Phú, Q.5, TP.HCM
+									</li>
+									<li>
+										<i class="fas fa-envelope"></i>
+										<span>Email:</span>
+										pxhieu595@gmail.com
+									</li>
+									<li>
+										<i class="fas fa-phone"></i>
+										<span>Phone:</span>
+										0971251798 - 0935717751
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12" style="padding-top: 20px">
+					<div class="row">
+						<div class="col-md-4 footer-static-address">
+							<img src="images/logo.png" alt=""></br>
+						Công Ty Cổ Phần Thương Mại Sách GTH</br>
+					71/70 Trần Phú, Q.5, TP.HCM</br>
+				Tel: 0935717751 - Fax: 0971251798</br>
+			MST: 0303615027 do Sở Kế Hoạch Và Đầu Tư Tp.HCM cấp ngày 21/05/2018</br>
+			<img id="logo-congthuong" src="images/logo_so_cong_thuong.png" alt="">
+		</div>
+		<div class="col-md-4 footer-static-follow">
+			<h3>Follow</h3>
+			<div id="follow">
+				<a href="#" title="">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-twitter-square"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-google"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-youtube"></i>
+				</a>
+			</div>
+		</div>
+		<div id="payment" class="col-md-4">
+			<i class="fab fa-cc-visa"></i>
+			<i class="fab fa-cc-mastercard"></i>
+			<i class="fab fa-cc-paypal"></i>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

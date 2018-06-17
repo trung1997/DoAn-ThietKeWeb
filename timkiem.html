@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Trang Web bán sách online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link href="css/ion.rangeSlider.css" rel="stylesheet">
+	<link href="css/ion.rangeSlider.skin.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<style>
+	body{
+		background-color: #eee;
+	}
+</style>
+</head>
+<body>
+	<!--Header-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 bottombor">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="wellcome">
+								<p>WELLCOME TO GTHBOOKS</p>
+							</div>
+						</div>
+						<div class="col-lg-6 dangki">
+							<nav>
+								<ul>
+									<li><a href="dangky.html" style="border-right:1px solid black;padding-right: 5px;font-size: 16px;font-weight: bold;">Đăng Ký </a></li>
+									<li class="nav-item dropdown"> <a style="font-size: 16px" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Đăng nhập</a>
+										<div class="dropdown-menu" style="min-width: 250px;">
+											<div class="container">
+												<div class="form-group">
+													<label for="tenTK">Tên tài khoản:</label>
+													<input type="text" name="tenTK" class="form-control" />
+												</div>
+												<div class="form-group">
+													<label for="matKhau">Mật khẩu:</label>
+													<input type="password" name="matKhau" class="form-control" />
+												</div>
+												<div class="form-group">
+													<button class="btn btn-primary">Đăng nhập</button>
+												</div>
+												<div class="form-group"> <a href="#">Quên mật khẩu?</a> </div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-sm navbar-light bg-faded col-lg-12">
+				<div class="col-lg-2 logoo">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt="logo"></a>
+				</div>
+				<!-- Links -->
+				<div class="col-lg-7">
+					<div class="collapse navbar-collapse" id="nav-content">   
+						<ul class="navbar-nav ">
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html">TRANG CHỦ</a>
+							</li>
+							<li class="nav-item dropdown hovermenu">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+									SÁCH NƯỚC NGOÀI
+								</a>
+								<div class="dropdown-menu" aria-labelledby="Preview">
+									<a class="dropdown-item" href="#">SÁCH TIẾNG NHẬT</a>
+									<a class="dropdown-item" href="#">SÁCH TIẾNG ĐỨC</a>
+									<a class="dropdown-item" href="#">SÁCH TIẾNG ANH</a>
+								</div>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html#tlkn">TÂM LÝ-KỸ NĂNG</a>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html#na">SÁCH MỚI</a>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link " href="tintuc.html">
+									TIN TỨC
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="timkiem">
+						<input id="timkiem" type="text" name="timkiem" placeholder="Tên Sách cần tìm">
+						<a href="timkiem.html"><i class="fas fa-search rights"></i></a>
+					</div>
+					<div class="giohang">
+						<i class="fas fa-shopping-cart img-fluid" style="max-width: 100%;"></i>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!--DS Tim Kiem-->
+	<div class="container topborder">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<!-- Card Header -->
+					<div class="card-header">
+						DANH MỤC SẢN PHẨM
+					</div>
+					<!-- List Group -->
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Sách Trong Nước <span class="badge badge-secondary badge-pill">15</span></li>
+						<li class="list-group-item">Văn Học<span class="badge badge-secondary badge-pill">10</span></li>
+						<li class="list-group-item">Sách Nước Ngoài<span class="badge badge-secondary badge-pill">20</span></li>
+						<li class="list-group-item">Tiểu Thuyết<span class="badge badge-secondary badge-pill">150</span></li>
+					</ul>
+				</div>
+				<div class="card">
+
+					<!-- Card Header -->
+					<div class="card-header">
+						HÃNG SẢN XUẤT
+					</div>
+					<div class="form-check form-check-inline">
+						<!-- List Group -->
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Sony"><label class="form-check-label">NXB Trẻ</label><span class="badge badge-secondary badge-pill">15</span></li>
+							<li class="list-group-item"><input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Toshiba"><label class="form-check-label">Bloomsbury UK</label><span class="badge badge-secondary badge-pill">10</span></li> 
+							<li class="list-group-item"><input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Airrang"><label class="form-check-label">Hachette</label><span class="badge badge-secondary badge-pill">12</span></li>
+							<li class="list-group-item"><input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Panasonic"><label class="form-check-label">Scholastic</label><span class="badge badge-secondary badge-pill">150</span></li>					
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="card">
+
+					<!-- Card Header -->
+					<div class="card-header">
+						ĐÁNH GIÁ
+					</div>
+
+					<!-- List Group -->
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">
+							<span>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span>(Ít nhất 4 sao)</span>
+						</li>
+						<li class="list-group-item">
+							<span>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span>(Ít nhất 3 sao)</span>
+						</li>
+						<li class="list-group-item">
+							<span>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span>(Ít nhất 2 sao)</span>
+						</li>
+						<li class="list-group-item">
+							<span>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span>(Ít nhất 1 sao)</span>
+						</li>						
+					</ul>
+
+				</div>
+				<div class="card">
+
+					<!-- Card Header -->
+					<div class="card-header">
+						GIÁ
+					</div>
+					<!-- Range slider, low track: -->
+					<input type="text" id="range_01">
+
+				</div>
+				<div class="card">
+
+					<!-- Card Header -->
+					<div class="card-header">
+						TÁC GIẢ
+					</div>
+					<div class="form-check form-check-inline">
+						<!-- List Group -->
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Sony"><label class="form-check-label">Lucy Kee</label><span class="badge badge-secondary badge-pill">15</span></li>
+							<li class="list-group-item"><input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Toshiba"><label class="form-check-label">Warner Bros</label><span class="badge badge-secondary badge-pill">10</span></li>
+							<li class="list-group-item"><input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Airrang"><label class="form-check-label">Jim Kay</label><span class="badge badge-secondary badge-pill">12</span></li>
+							<li class="list-group-item"><input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Panasonic"><label class="form-check-label">J.K Rowling</label><span class="badge badge-secondary badge-pill">150</span></li>					
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-8">
+						<h4 class="tieudekqtk">Kết quả tìm kiếm cho 'Sách':</h4><h4 class="tieudekqtk">45 kết quả</h4>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
+							<label class="form-check-label">Bán chạy nhất</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="2">
+							<label class="form-check-label">Giá thấp đến cao</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="3">
+							<label class="form-check-label">Giá cao xuống thấp</label>
+						</div>
+					</div>
+					<div class="col-md-4">
+						Xem
+						<div class="dropdown inline-block">
+							<button class="btn btn-success dropdown-toggle" type="button" id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								20
+							</button>
+							<div class="dropdown-menu" aria-labelledby="about-us">
+								<a class="dropdown-item" href="#">10</a>
+								<a class="dropdown-item" href="#">20</a>
+								<a class="dropdown-item" href="#">30</a>
+							</div>
+						</div>
+						SP trên một trang
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12"><hr></div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_1.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>55.000 đ</h2>
+								<p>Người Ta Dễ Buồn Vì Những Điều Đã Cũ</p>
+								<p style="font-size: 15px;">Nhiều Nghệ Sĩ</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_10.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>95.000 đ</h2>
+								<p>Elon Musk: How the Billionaire C...</p>
+								<p style="font-size: 15px;">Ashlee Vance</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_13.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>226.000 đ</h2>
+								<p>New Conceptual Selling</p>
+								<p style="font-size: 15px;">B. Miller & E. Heiman</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_11.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">	
+								<h2>113.000 đ</h2>
+								<p>Are You Smart Enough to Work For...</p>
+								<p style="font-size: 15px;">William Poundstone</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_12.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>213.000 đ</h2>
+								<p>How to Master the Art of Selling</p>
+								<p style="font-size: 15px;">Tom Hopkins</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_15.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>149.000 đ</h2>
+								<p>Phù Thủy Sàn Chứng Khoán (Tái Bả...</p>
+								<p style="font-size: 15px;">Jack D. Schwager</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_14.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>149.000đ</h2>
+								<p>Cuộc Dịch Chuyển Đại Dương Xanh</p>
+								<p style="font-size: 15px;">ChanKim & Mauborgne</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_17.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>149.000 đ</h2>
+								<p>Doanh Nghiệp Tinh Gọn 2</p>
+								<p style="font-size: 15px;">Trevor Owens</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_16.png" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>112.000 đ</h2>
+								<p>Hành Trình 30 Ngày Trở Thành Bậc...</p>
+								<p style="font-size: 15px;">Hàn Quang Dự</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_19.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>53.000 đ</h2>
+								<p>Năm Câu Chuyện Về Âm Nhạc Và Đêm..</p>
+								<p style="font-size: 15px;">Kazuo Ishiguro</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_18.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>102.000 đ</h2>
+								<p>Sydney: Nếu Còn Có Ngày Mai </p>
+								<p style="font-size: 15px;">Sydney Sheldon</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_20.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>50.000 đ</h2>
+								<p>Những Người Đàn Ông Không Có Đàn Bà</p>
+								<p style="font-size: 15px;">Haruki Murakami</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_3.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>72.000 đ</h2>
+								<p>Central Park (Tái Bản 2018)</p>
+								<p style="font-size: 15px;">Nhiều Nghệ Sĩ</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_2.png" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>62.000 đ</h2>
+								<p>Thanh Xuân Của Chúng Ta Sẽ Kéo D...</p>
+								<p style="font-size: 15px;">Nhiều Nghệ Sĩ</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="fas fa-plus"></i></div>
+								<img src="images/products/prod_5.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="gtco-text">
+								<h2>86.000 đ</h2>
+								<p>Xách Ba Lô Lên Và Đi - Tập 1 - C...</p>
+								<p style="font-size: 15px;">Huyền Chip</p>
+								<p><span class="btn btn-primary">Mua Ngay</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+								<a href="#" class="gtco-card-item">
+									<figure>
+										<div class="overlay"><i class="fas fa-plus"></i></div>
+										<img src="images/products/prod_4.jpg" alt="Image" class="img-fluid">
+									</figure>
+									<div class="gtco-text">
+										<h2>Data Analytics</h2>
+										<p>Trò Chơi Cấm-Tập 4 -Dị Giới</p>
+										<p style="font-size: 15px;">Ninh Hàng Nhất</p>
+										<p><span class="btn btn-primary">Mua Ngay</span></p>
+									</div>
+								</a>
+							</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<nav>
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+									<a href="#" class="page-link" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="page-item"><a href="#" class="page-link">1</a></li>
+								<li class="page-item"><a href="#" class="page-link">2</a></li>
+								<li class="page-item"><a href="#" class="page-link">3</a></li>
+								<li class="page-item active"><a href="#" class="page-link">4</a></li>
+								<li class="page-item"><a href="#" class="page-link">5</a></li>
+								<li class="page-item"><a href="#" class="page-link">6</a></li>
+								<li class="page-item"><a href="#" class="page-link">7</a></li>
+								<li class="page-item">
+									<a href="#" class="page-link" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4>DANH SÁCH SẢN PHẨM BẠN ĐÃ XEM</h4>
+						<div class="row">
+							<div class="col-md-3">
+								<a href="#" class="gtco-card-item">
+									<figure>
+										<div class="overlay"><i class="fas fa-plus"></i></div>
+										<img src="images/products/prod_2.png" alt="Image" class="img-fluid">
+									</figure>
+									<div class="gtco-text">
+										<h2>62.000 đ</h2>
+										<p>Thanh Xuân Của Chúng Ta Sẽ Kéo D...</p>
+										<p style="font-size: 15px;">Nhiều Nghệ Sĩ</p>
+										<p><span class="btn btn-primary">Mua Ngay</span></p>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="#" class="gtco-card-item">
+									<figure>
+										<div class="overlay"><i class="fas fa-plus"></i></div>
+										<img src="images/products/prod_3.jpg" alt="Image" class="img-fluid">
+									</figure>
+									<div class="gtco-text">
+										<h2>72.000 đ</h2>
+										<p>Central Park (Tái Bản 2018)</p>
+										<p style="font-size: 15px;">Nhiều Nghệ Sĩ</p>
+										<p><span class="btn btn-primary">Mua Ngay</span></p>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="#" class="gtco-card-item">
+									<figure>
+										<div class="overlay"><i class="fas fa-plus"></i></div>
+										<img src="images/products/prod_13.jpg" alt="Image" class="img-fluid">
+									</figure>
+									<div class="gtco-text">
+										<h2>226.000 đ</h2>
+										<p>The NEW Conceptual Selling</p>
+										<p style="font-size: 15px;">B. Miller & E. Heiman</p>
+										<p><span class="btn btn-primary">Mua Ngay</span></p>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="#" class="gtco-card-item">
+									<figure>
+										<div class="overlay"><i class="fas fa-plus"></i></div>
+										<img src="images/products/prod_4.jpg" alt="Image" class="img-fluid">
+									</figure>
+									<div class="gtco-text">
+										<h2>Data Analytics</h2>
+										<p>Trò Chơi Cấm - Tập 4 - Dị Giới</p>
+										<p style="font-size: 15px;">Ninh Hàng Nhất</p>
+										<p><span class="btn btn-primary">Mua Ngay</span></p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<nav>
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+									<a href="#" class="page-link" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="page-item"><a href="#" class="page-link">1</a></li>
+								<li class="page-item"><a href="#" class="page-link">2</a></li>
+								<li class="page-item"><a href="#" class="page-link">3</a></li>
+								<li class="page-item active"><a href="#" class="page-link">4</a></li>
+								<li class="page-item"><a href="#" class="page-link">5</a></li>
+								<li class="page-item"><a href="#" class="page-link">6</a></li>
+								<li class="page-item"><a href="#" class="page-link">7</a></li>
+								<li class="page-item">
+									<a href="#" class="page-link" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!---->
+<!--End Timkiem-->
+<!-- Footer-->
+<footer id="footer">
+	<div class="container footer">
+		<div class="row">
+			<div class="col-md-12 footer-title">
+				<h2>
+					<span>GTH</span>
+					Books
+				</h2>
+			</div>
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="footer-static-title">
+							<h3>Về GTHBooks</h3>
+						</div>
+						<div class="footer-static-content">
+							<ul>
+								<li>
+									<a href="#">Điều khoản sử dụng</a>
+								</li>
+								<li>
+									<a href="#">Chính sách bảo mật</a>
+								</li>
+								<li>
+									<a href="#">Tuyển dụng</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="footer-static-title">
+							<h3>Hỗ trợ</h3>
+						</div>
+						<div class="footer-static-content">
+							<ul>
+								<li>
+									<a href="#">Chính sách đổi-trả-hoàn tiền</a>
+								</li>
+								<li>
+									<a href="#">Phương thức vận chuyển</a>
+								</li>
+								<li>
+									<a href="#">Phương thức thanh toán</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="footer-static-title">
+							<h3>Liên hệ</h3>
+						</div>
+						<div class="footer-static-content">
+							<ul>
+								<li>
+									<i class="fas fa-map-marker"></i>
+									<span>Địa chỉ:</span>
+									71/70 Trần Phú, Q.5, TP.HCM
+								</li>
+								<li>
+									<i class="fas fa-envelope"></i>
+									<span>Email:</span>
+									pxhieu595@gmail.com
+								</li>
+								<li>
+									<i class="fas fa-phone"></i>
+									<span>Phone:</span>
+									0971251798 - 0935717751
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12" style="padding-top: 20px">
+				<div class="row">
+					<div class="col-md-4 footer-static-address">
+						<img src="images/logo.png" alt=""></br>
+					Công Ty Cổ Phần Thương Mại Sách GTH</br>
+				71/70 Trần Phú, Q.5, TP.HCM</br>
+			Tel: 0935717751 - Fax: 0971251798</br>
+		MST: 0303615027 do Sở Kế Hoạch Và Đầu Tư Tp.HCM cấp ngày 21/05/2018</br>
+		<img id="logo-congthuong" src="images/logo_so_cong_thuong.png" alt="">
+	</div>
+	<div class="col-md-4 footer-static-follow">
+		<h3>Follow</h3>
+		<div id="follow">
+			<a href="#" title="">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="#" title="">
+				<i class="fab fa-twitter-square"></i>
+			</a>
+			<a href="#" title="">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="#" title="">
+				<i class="fab fa-google"></i>
+			</a>
+			<a href="#" title="">
+				<i class="fab fa-youtube"></i>
+			</a>
+		</div>
+	</div>
+	<div id="payment" class="col-md-4">
+		<i class="fab fa-cc-visa"></i>
+		<i class="fab fa-cc-mastercard"></i>
+		<i class="fab fa-cc-paypal"></i>
+	</div>
+	<div class="col-md-12 footer-end">
+		Copyright &copy 2018 by GTH - All rights reserved.
+	</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Trang Web bán sách online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link href="css/ion.rangeSlider.css" rel="stylesheet">
+	<link href="css/ion.rangeSlider.skin.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<style>
+	body{
+		background-color: #eee;
+	}
+</style>
+</head>
+<body>
+	<!--Header-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 bottombor">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="wellcome">
+								<p>WELLCOME TO GTHBOOKS</p>
+							</div>
+						</div>
+						<div class="col-lg-6 dangki">
+							<nav>
+								<ul>
+									<li><a href="dangky.html" style="border-right:1px solid black;padding-right: 5px;font-size: 16px;font-weight: bold;">Đăng Ký </a></li>
+									<li class="nav-item dropdown"> <a style="font-size: 16px" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Đăng nhập</a>
+										<div class="dropdown-menu" style="min-width: 250px;">
+											<div class="container">
+												<div class="form-group">
+													<label for="tenTK">Tên tài khoản:</label>
+													<input type="text" name="tenTK" class="form-control" />
+												</div>
+												<div class="form-group">
+													<label for="matKhau">Mật khẩu:</label>
+													<input type="password" name="matKhau" class="form-control" />
+												</div>
+												<div class="form-group">
+													<button class="btn btn-primary">Đăng nhập</button>
+												</div>
+												<div class="form-group"> <a href="#">Quên mật khẩu?</a> </div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-sm navbar-light bg-faded col-lg-12">
+				<div class="col-lg-2 logoo">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt="logo"></a>
+				</div>
+				<!-- Links -->
+				<div class="col-lg-7">
+					<div class="collapse navbar-collapse" id="nav-content">   
+						<ul class="navbar-nav ">
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html">TRANG CHỦ</a>
+							</li>
+							<li class="nav-item dropdown hovermenu">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+									SÁCH NƯỚC NGOÀI
+								</a>
+								<div class="dropdown-menu" aria-labelledby="Preview">
+									<a class="dropdown-item" href="#">SÁCH TIẾNG NHẬT</a>
+									<a class="dropdown-item" href="#">SÁCH TIẾNG ĐỨC</a>
+									<a class="dropdown-item" href="#">SÁCH TIẾNG ANH</a>
+								</div>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html#tlkn">TÂM LÝ-KỸ NĂNG</a>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html#na">SÁCH MỚI</a>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link " href="tintuc.html">
+									TIN TỨC
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="timkiem">
+						<input id="timkiem" type="text" name="timkiem" placeholder="Tên Sách cần tìm">
+						<a href="timkiem.html"><i class="fas fa-search rights"></i></a>
+					</div>
+					<div class="giohang">
+						<i class="fas fa-shopping-cart img-fluid" style="max-width: 100%;"></i>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!--header-->
+	<!--body-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" style="background-color:#ecf0f5">
+				<div class="row">
+					<div class="col-md-8" >
+						<div  style="background-color:white;padding: 20px;border-radius: 15px;">
+							<div id="line137">
+								<a  href="index.html">
+									<i class="fas fa-home"></i>
+									Trang chủ
+								</a>
+								<em style="color:#999999;">/</em>
+								<span style="color:#999999;">Tin tức về sách</span>
+								<em style="color:#999999;">/</em>
+								<span style="color:#999999;">Những tác phẩm từ sách lên phim hay nhất năm 2017</span>
+							</div>
+							<div>
+								<h3>Những tác phẩm từ sách lên phim hay nhất năm 2017</h3>
+								<div style="font-size: 12px;">
+									<i class="fas fa-user-circle"></i>
+									<span style="padding-right: 5px;">
+										<a style="color:black;font-weight: 500;" title="Vnwriter" href="#">Vnwriter</a>
+									</span>
+
+									<span><i  class="fas fa-clock"></i>Tháng Hai 2, 2018</span>
+								</div>
+							</div>
+							<hr>
+							<img style="width: 100%;" src="images/tintuc/tintuc4/tintuc4-1.jpg" alt="imgtintuc1" class="img-fluid">
+							<p><b>Từ chú hề Pennywise cho đến cảnh nóng trong “50 sắc thái”, năm 2017 đánh dấu sự khởi sắc của thể loại phim chuyển thể, nâng sức ảnh hưởng của những cuốn sách đến cả thế giới.</b></p>
+							<p style="padding-top: 15px;">Mới đây, người dùng trên trang web chuyên đánh giá phim Rotten Tomatoes đã đưa ra danh sách những bộ phim chuyển thể hay nhất và dở nhất của năm 2017, dựa trên điểm đánh giá trên website này.
+							</p>
+							<p>Đương nhiên kịch bản chuyển thể không phải là nguyên nhân duy nhất giúp các bộ phim thành công hay thất bại, tuy nhiên một kịch bản phim chặt chẽ sẽ giúp người hâm mộ dễ dàng đánh giá tốt hơn tác phẩm họ phải trả tiền để được xem.</p>
+							<p>Danh sách dưới đây chỉ bao gồm các bộ phim điện ảnh được chiếu ngoài rạp trong năm 2017, không tính đến các series phim được chiếu trên các kênh như HBO, Netflix, Hulu hay các kênh phim truyền hình khác.</p>
+							<div>
+								<div  style="padding:15px">
+									<img  style="width: 100%;" src="images/tintuc/tintuc4/tintuc4-1.jpg" alt="imgtintuc1">
+									<p class="ghichuhinhanh">Hình 1:Gọi em bằng tên anh là tác phẩm phim chuyển thể thành công nhất năm 2017.</p>
+								</div>
+							</div>
+							<p>
+								<b>1. Gọi em bằng tên anh </b>– Call me by your name (98%): Bộ phim chuyển thể từ cuốn sách cùng tên của Andre Aciman kể về một mối tình mãnh liệt giữa hai chàng trai trẻ, Elio và Oliver tại vùng biển nước Ý xinh đẹp. Dù ra mắt vào cuối năm nhưng bộ phim đã giành được nhiều đánh giá tích cực từ giới chuyên môn, nhận được 3 đề cử quan trọng trong lễ trao giải Quả cầu vàng lần thứ 75 và đứng trong top đầu những bộ phim hay nhất năm 2017.
+							</p>
+							<p>
+								<b>2. Hidden Figures (92%):</b>– Được chuyển thể từ cuốn sách cùng tên của Margot Lee Shetterly về ba người phụ nữ da màu tài giỏi làm việc cho Cơ quan hàng không vũ trụ Mỹ NASA trong những năm 1960. Tác phẩm đã mang về doanh thu phòng vé gấp 10 lần kinh phí ban đầu và 3 đề cử giải Oscar.
+							</p>
+							<p>
+								<b>3. The Breadwinner (92%):</b>–  Bộ phim hoạt hình được sản xuất bởi Angelina Jolie được chuyển thể từ cuốn sách cùng tên của Deborah Ellis. Đó là hành trình của cô gái 11 tuổi Parvana giải oan cho cha mình sau khi ông bị bắt oan ở vùng quê bị khủng bố Afghanistan năm 2001. Bộ phim đã giành chiến thắng tại hai giải quan trọng tại Animation is Film, và trở thành phim hoạt hình chuyển thể hay nhất năm 2017.
+							</p>
+							<p>
+								<b>4. Quái vật ghé thăm – A Monster calls (87%): </b>– Được dựng từ cuốn sách cùng tên của Patrick Ness kể về một cậu bé tìm kiếm sự giúp đỡ của một con quái vật cây để đối mặt với căn bệnh nan y của mẹ. Dù được đánh giá cao về mặt nội dung nhưng Quái vật ghé thăm lại là một sự thất bại phòng vé, chỉ thu được 47 triệu đô so với kinh phí 43 triệu đô.
+							</p>
+							<p>
+								<b>5. The Lost City of Z (87%):</b>–Dựa trên cuốn sách cùng tên của David Grann, The Lost City of Z xoay quanh hành trình một nhà thám hiểm đi tìm tàn tích của một thành phố cổ mang tên Z. Bộ phim cũng thất bại thảm hại ở phòng vé, tuy nhiên vẫn được tạp chí Time bình chọn là một trong 10 phim hay nhất năm 2017.
+							</p>
+							<p>
+								<b>6. Điều kỳ diệu (86%):</b>–Bộ phim được chắp bút bởi đạo diễn Stephen Chbosky từ cuốn sách cùng tên của R.J. Palacio. Xoay quanh cậu bé Auggie có khuôn mặt bị dị tật bẩm sinh lần đầu bước chân vào trường học, Điều kỳ diệu mang nhiều ý nghĩa nhân văn và được đông đảo người xem đón nhận.
+							</p>
+							<div>
+								<div  style="padding:15px">
+									<img  style="width: 100%;" src="images/tintuc/tintuc4/tintuc4-2.jpg" alt="imgtintuc1">
+									<p class="ghichuhinhanh">Hình 2:It được đánh giá là tác phẩm chuyển thể thành công nhất của ông hoàng kinh dị Stephen King..</p>
+								</div>
+							</div>
+							<p>
+								<b>7. It (85%):</b> Năm 2017 đánh dấu sự trở lại của thể loại phim kinh dị, tiêu biểu nhất phải kể đến bộ phim It chuyển thể từ tiểu thuyết cùng tên của Stephen King. Với hình ảnh áo mưa vàng, bóng bay đỏ và chú hề đáng sợ Pennywise, It đã làm mưa làm gió trên các rạp chiếu phim trên toàn thế giới, đứng trong top 10 phim có doanh thu cao nhất năm nay. Nhiều nhà phê bình còn gọi đây là tác phẩm chuyển thể thành công nhất của ông hoàng kinh dị Stephen King.
+							</p>
+							<p>
+								<b>8. My Cousin Rachel (76%):</b> Cuốn tiểu thuyết năm 1951 của Daphne du Maurier được sống lại nhờ bộ phim chuyển thể cùng tên năm 2017. Tác phẩm kể về một chàng trai trẻ người Anh luôn tình cách trả thù cô em họ Rachel, nhưng cảm xúc của chàng trai bỗng trở nên phức tạp khi anh không thể cưỡng lại vẻ quyến rũ bí ẩn của cô. Bộ phim đánh dấu sự tiến bộ vượt bậc của nữ diễn viên Rachel Weisz trong vai diễn cùng tên.
+							</p>
+							<div>
+								<div  style="padding:15px">
+									<img  style="width: 100%;" src="images/tintuc/tintuc4/tintuc4-3.jpg" alt="imgtintuc1">
+									<p class="ghichuhinhanh">Hình 3:Nghe mùi kết thúc là một tác phẩm chuyển thể khá thú vị.</p>
+								</div>
+							</div>
+							<p>
+								<b>9. Thank You for Your Service (76%):</b> Lấy chủ đề chiến tranh Iraq nhưng tập trung nhiều hơn về cuộc sống của người lính khi trở về quên nhà, Thank You for Your Service được chuyển thể từ cuốn sách phi hư cấu của nhà báo David Finkel. Bộ phim cũng nhận được phản hồi tích cực từ các nhà phê bình nhưng lại không nhận được sự đón nhận nhiệt tình từ khán giả ngoài phòng vé.
+							</p>
+							<p>
+								<b>10. Nghe mùi kết thúc – The Sense of an Ending (75%): </b>Cuốn tiểu thuyết đoạt giải Man Booker 2011 của Julian Barnes tập trung nhiều vào sự thay đổi cung bậc cảm xúc, được đánh giá là cuốn truyện trinh thám về tâm lý con người lần đầu được dựng thành phim. Trên Rotten Tomatoes, Nghe mùi kết thúc được xếp hạng “Mới mẻ” với đánh giá đạt 75%.
+							</p>
+							<div style="float: right;">
+								<b>Thu Hoài</b>
+							</div>
+						</div>
+						<div style="padding-top:15px;">
+							<hr>
+							<h4>BÌNH LUẬN</h4>
+						</div>
+						<form  onsubmit="return ValidateForm()" method="post" accept-charset="utf-8">
+							<div style="background-color:white;padding: 20px;">
+								<div>
+									<label>Nội dung bình luận</label>
+									<textarea id="ykien" name="txtbinhluan" required="required" maxlength="7000" style="width:100%;padding:15px;font-size: 13px;" placeholder="Bình luận tại đây..."></textarea>
+									<p id="thongbaoykien"></p>
+								</div>
+								<div>
+									<label>Tên</label>
+									<input style="width:100%;padding:5px;font-size: 13px;" type="text"  name="name" placeholder="Nhập Tên"><br>
+								</div>
+								<div>
+									<label>Email</label>
+									<input style="width:100%;padding:5px;font-size: 13px;" type="text" name="txtemail" required="required" id="email" placeholder="Nhập Email">
+									<p id="thongbaoemail"></p>
+								</div>
+								<button type="submit">Gửi Bình Luận</button>
+							</div>
+						</form>
+						<hr>
+						<div>
+							<h4>NHỮNG BÌNH LUẬN KHÁC</h4>
+						</div>
+						<div style="background-color:white;padding: 20px;">
+							<div style="border-bottom: 2px solid #f0f3f0">
+								<div>
+									<h5 style="font-size:20px">
+										Alex
+										<span style="float:right">Tháng Ba 20, 2018</span>
+									</h5>
+								</div>
+								<p>
+									Sed ut perspiciatis unde omnis iste na tus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+								</p>
+								<a href="#">Reply</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 nav-sticky">
+						<div  style="background-color:white;padding: 10px;border-radius: 15px;">
+							<div style="border: 1px solid black;background-color:black;color:white;padding:5px;border-radius: 6px;">
+								<h6><i class="fas fa-shopping-bag"></i> Khuyên Đọc</h6>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_3.jpg" alt="khuyendoc1" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>Guillaume Musso:Central Park</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_13.jpg" alt="khuyendoc2" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>The New Conceptual Selling</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_18.jpg" alt="khuyendoc3" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>Sydney Shelldon: Nếu Còn ngày mai</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_4.jpg" alt="khuyendoc4" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>Trò Chơi Cấm - Dị Giới</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end body-->
+	<!-- Footer-->
+
+	<footer id="footer">
+		<div class="container footer">
+			<div class="row">
+				<div class="col-md-12 footer-title">
+					<h2>
+						<span>GTH</span>
+						Books
+					</h2>
+				</div>
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="footer-static-title">
+								<h3>Về GTHBooks</h3>
+							</div>
+							<div class="footer-static-content">
+								<ul>
+									<li>
+										<a href="#">Điều khoản sử dụng</a>
+									</li>
+									<li>
+										<a href="#">Chính sách bảo mật</a>
+									</li>
+									<li>
+										<a href="#">Tuyển dụng</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="footer-static-title">
+								<h3>Hỗ trợ</h3>
+							</div>
+							<div class="footer-static-content">
+								<ul>
+									<li>
+										<a href="#">Chính sách đổi-trả-hoàn tiền</a>
+									</li>
+									<li>
+										<a href="#">Phương thức vận chuyển</a>
+									</li>
+									<li>
+										<a href="#">Phương thức thanh toán</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="footer-static-title">
+								<h3>Liên hệ</h3>
+							</div>
+							<div class="footer-static-content">
+								<ul>
+									<li>
+										<i class="fas fa-map-marker"></i>
+										<span>Địa chỉ:</span>
+										71/70 Trần Phú, Q.5, TP.HCM
+									</li>
+									<li>
+										<i class="fas fa-envelope"></i>
+										<span>Email:</span>
+										pxhieu595@gmail.com
+									</li>
+									<li>
+										<i class="fas fa-phone"></i>
+										<span>Phone:</span>
+										0971251798 - 0935717751
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12" style="padding-top: 20px">
+					<div class="row">
+						<div class="col-md-4 footer-static-address">
+							<img src="images/logo.png" alt=""></br>
+						Công Ty Cổ Phần Thương Mại Sách GTH</br>
+					71/70 Trần Phú, Q.5, TP.HCM</br>
+				Tel: 0935717751 - Fax: 0971251798</br>
+			MST: 0303615027 do Sở Kế Hoạch Và Đầu Tư Tp.HCM cấp ngày 21/05/2018</br>
+			<img id="logo-congthuong" src="images/logo_so_cong_thuong.png" alt="">
+		</div>
+		<div class="col-md-4 footer-static-follow">
+			<h3>Follow</h3>
+			<div id="follow">
+				<a href="#" title="">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-twitter-square"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-google"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-youtube"></i>
+				</a>
+			</div>
+		</div>
+		<div id="payment" class="col-md-4">
+			<i class="fab fa-cc-visa"></i>
+			<i class="fab fa-cc-mastercard"></i>
+			<i class="fab fa-cc-paypal"></i>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

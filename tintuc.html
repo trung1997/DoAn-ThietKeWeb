@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Trang Web bán sách online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link href="css/ion.rangeSlider.css" rel="stylesheet">
+	<link href="css/ion.rangeSlider.skin.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<style>
+	body{
+		background-color: #eee;
+	}
+</style>
+</head>
+<body>
+	<!--Header-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 bottombor">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="wellcome">
+								<p>WELLCOME TO GTHBOOKS</p>
+							</div>
+						</div>
+						<div class="col-lg-6 dangki">
+							<nav>
+								<ul>
+									<li><a href="dangky.html" style="border-right:1px solid black;padding-right: 5px;font-size: 16px;font-weight: bold;">Đăng Ký </a></li>
+									<li class="nav-item dropdown"> <a style="font-size: 16px" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Đăng nhập</a>
+										<div class="dropdown-menu" style="min-width: 250px;">
+											<div class="container">
+												<div class="form-group">
+													<label for="tenTK">Tên tài khoản:</label>
+													<input type="text" name="tenTK" class="form-control" />
+												</div>
+												<div class="form-group">
+													<label for="matKhau">Mật khẩu:</label>
+													<input type="password" name="matKhau" class="form-control" />
+												</div>
+												<div class="form-group">
+													<button class="btn btn-primary">Đăng nhập</button>
+												</div>
+												<div class="form-group"> <a href="#">Quên mật khẩu?</a> </div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-sm navbar-light bg-faded col-lg-12">
+				<div class="col-lg-2 logoo">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt="logo"></a>
+				</div>
+				<!-- Links -->
+				<div class="col-lg-7">
+					<div class="collapse navbar-collapse" id="nav-content">   
+						<ul class="navbar-nav ">
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html">TRANG CHỦ</a>
+							</li>
+							<li class="nav-item dropdown hovermenu">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+									SÁCH NƯỚC NGOÀI
+								</a>
+								<div class="dropdown-menu" aria-labelledby="Preview">
+									<a class="dropdown-item" href="#">SÁCH TIẾNG NHẬT</a>
+									<a class="dropdown-item" href="#">SÁCH TIẾNG ĐỨC</a>
+									<a class="dropdown-item" href="#">SÁCH TIẾNG ANH</a>
+								</div>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html#tlkn">TÂM LÝ-KỸ NĂNG</a>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link" href="index.html#na">SÁCH MỚI</a>
+							</li>
+							<li class="nav-item hovermenu">
+								<a class="nav-link " href="tintuc.html">
+									TIN TỨC
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="timkiem">
+						<input id="timkiem" type="text" name="timkiem" placeholder="Tên Sách cần tìm">
+						<a href="timkiem.html"><i class="fas fa-search rights"></i></a>
+					</div>
+					<div class="giohang">
+						<i class="fas fa-shopping-cart img-fluid" style="max-width: 100%;"></i>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!--header-->
+	<!--body-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" style="background-color:#ecf0f5">
+				<div class="row">
+					<div class="col-md-8" style="padding-bottom: 5px;">
+						<div  style="background-color:white;padding: 20px;border-radius: 15px;">
+							<div id="line137">
+								<a  href="index.html">
+									<i class="fas fa-home"></i>
+									Trang chủ
+								</a>
+								<em style="color:#999999;">/</em>
+								<span style="color:#999999;">Tin tức về sách</span>
+							</div>
+							<div>
+								<h1>TIN TỨC VỀ SÁCH</h1>
+								<p style="font-size: 13px;">Tổng hợp tin tức hay, điểm tin sách, kỹ năng, nghệ thuật sống đẹp và những câu chuyện ý nghĩa trong cuộc sống</p>
+							</div>
+							<hr>
+							<div class="row" style="padding-bottom: 10px;">
+								<div class="col-md-6">
+									<div>
+										<a href="tintuc1.html">
+											<img style="width: 100%" src="images/tintuc/tintuc1/tintuc1.jpg" alt="tintuc1" class="img-fluid">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="linktintuc">
+										<p style="font-size:12px;margin: 0;">Tháng Ba 14, 2018</p>
+										<a href="tintuc1.html">
+											<h4>Review Thành phố sách châu Âu – Quận 10 – Vạn Hạnh Mall</h4>
+										</a>
+										<p style="font-size:13px;">Có thể nói đây là thành phố sách Châu Âu thành công nhất ở Việt Nam hiện nay, với hơn…</p>
+										<a href="tintuc1.html">
+											<button type="button" class="btn btn-success">Xem thêm</button>
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="row" style="padding-bottom: 10px;">
+								<div class="col-md-6">
+									<div>
+										<a href="tintuc2.html">
+											<img src="images/tintuc/tintuc2/tintuc2-1.jpg" alt="tintuc1" class="img-fluid">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="linktintuc">
+										<p style="font-size:12px;margin: 0;">Tháng Hai 2, 2018</p>
+										<a href="tintuc2.html">
+											<h4>Đường sách TP.HCM năm 2017 thu 50 tỷ, gấp đôi năm 2016</h4>
+										</a>
+										<p style="font-size:13px;">Năm 2017, Đường sách TP.HCM (Nguyễn Văn Bình) thu hút 2,4 triệu lượt người đến thăm, đạt doanh thu 50…</p>
+										<a href="tintuc2.html">
+											<button type="button" class="btn btn-success">Xem thêm</button>
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="row" style="padding-bottom: 10px;">
+								<div class="col-md-6">
+									<div>
+										<a href="tintuc3.html">
+											<img src="images/tintuc/tintuc3/tintuc3-1.jpg" alt="tintuc1" class="img-fluid">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="linktintuc">
+										<p style="font-size:12px;margin: 0;">Tháng Hai 2, 2018</p>
+										<a href="tintuc3.html">
+											<h4>Cây viết trẻ từng đoạt giải quốc tế ra mắt tập thơ đầu tay</h4>
+										</a>
+										<p style="font-size:13px;">Huyền Thư đã sáng tác gần 300 bài thơ, trong đó có 40 tác phẩm được đăng tải trên các…</p>
+										<a href="tintuc3.html">
+											<button type="button" class="btn btn-success">Xem thêm</button>
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="row" style="padding-bottom: 10px;">
+								<div class="col-md-6">
+									<div>
+										<a href="tintuc4.html">
+											<img src="images/tintuc/tintuc4/tintuc4-1.jpg" alt="tintuc1" class="img-fluid">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="linktintuc">
+										<p style="font-size:12px;margin: 0;">Tháng Hai 2, 2018</p>
+										<a href="tintuc4.html">
+											<h4>Những tác phẩm từ sách lên phim hay nhất năm 2017</h4>
+										</a>
+										<p style="font-size:13px;">Từ chú hề Pennywise cho đến cảnh nóng trong “50 sắc thái”, năm 2017 đánh dấu sự khởi sắc của…</p>
+										<a href="tintuc4.html">
+											<button type="button" class="btn btn-success">Xem thêm</button>
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div>
+										<a href="tintuc5.html">
+											<img src="images/tintuc/tintuc5/tintuc5-1.jpg" alt="tintuc1" class="img-fluid">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="linktintuc">
+										<p style="font-size:12px;margin: 0;">Tháng Hai 2, 2018</p>
+										<a href="tintuc5.html">
+											<h4>Đã có chòm sao mang tên Harry Potter trên bầu trời</h4>
+										</a>
+										<p style="font-size:13px;">Việc sử dụng những hình ảnh quen thuộc với trẻ em hiện nay để đặt tên cho các chòm sao…</p>
+										<a href="tintuc5.html">
+											<button type="button" class="btn btn-success">Xem thêm</button>
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div  style="background-color:white;padding: 10px;border-radius: 15px;">
+							<div style="border: 1px solid black;background-color:black;color:white;padding:5px;border-radius: 6px;">
+								<h6><i class="fas fa-shopping-bag"></i> Khuyên Đọc</h6>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_3.jpg" alt="khuyendoc1" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>Guillaume Musso:Central Park</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_13.jpg" alt="khuyendoc2" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>The New Conceptual Selling</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_18.jpg" alt="khuyendoc3" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>Sydney Shelldon: Nếu Còn ngày mai</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 10px;">
+								<div class="col-md-4">
+									<div>
+										<img src="images/products/prod_4.jpg" alt="khuyendoc4" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div>
+										<p><b>Trò Chơi Cấm - Dị Giới</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end body-->
+	<!-- Footer-->
+
+	<footer id="footer">
+		<div class="container footer">
+			<div class="row">
+				<div class="col-md-12 footer-title">
+					<h2>
+						<span>GTH</span>
+						Books
+					</h2>
+				</div>
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="footer-static-title">
+								<h3>Về GTHBooks</h3>
+							</div>
+							<div class="footer-static-content">
+								<ul>
+									<li>
+										<a href="#">Điều khoản sử dụng</a>
+									</li>
+									<li>
+										<a href="#">Chính sách bảo mật</a>
+									</li>
+									<li>
+										<a href="#">Tuyển dụng</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="footer-static-title">
+								<h3>Hỗ trợ</h3>
+							</div>
+							<div class="footer-static-content">
+								<ul>
+									<li>
+										<a href="#">Chính sách đổi-trả-hoàn tiền</a>
+									</li>
+									<li>
+										<a href="#">Phương thức vận chuyển</a>
+									</li>
+									<li>
+										<a href="#">Phương thức thanh toán</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="footer-static-title">
+								<h3>Liên hệ</h3>
+							</div>
+							<div class="footer-static-content">
+								<ul>
+									<li>
+										<i class="fas fa-map-marker"></i>
+										<span>Địa chỉ:</span>
+										71/70 Trần Phú, Q.5, TP.HCM
+									</li>
+									<li>
+										<i class="fas fa-envelope"></i>
+										<span>Email:</span>
+										pxhieu595@gmail.com
+									</li>
+									<li>
+										<i class="fas fa-phone"></i>
+										<span>Phone:</span>
+										0971251798 - 0935717751
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12" style="padding-top: 20px">
+					<div class="row">
+						<div class="col-md-4 footer-static-address">
+							<img src="images/logo.png" alt=""></br>
+						Công Ty Cổ Phần Thương Mại Sách GTH</br>
+					71/70 Trần Phú, Q.5, TP.HCM</br>
+				Tel: 0935717751 - Fax: 0971251798</br>
+			MST: 0303615027 do Sở Kế Hoạch Và Đầu Tư Tp.HCM cấp ngày 21/05/2018</br>
+			<img id="logo-congthuong" src="images/logo_so_cong_thuong.png" alt="">
+		</div>
+		<div class="col-md-4 footer-static-follow">
+			<h3>Follow</h3>
+			<div id="follow">
+				<a href="#" title="">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-twitter-square"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-google"></i>
+				</a>
+				<a href="#" title="">
+					<i class="fab fa-youtube"></i>
+				</a>
+			</div>
+		</div>
+		<div id="payment" class="col-md-4">
+			<i class="fab fa-cc-visa"></i>
+			<i class="fab fa-cc-mastercard"></i>
+			<i class="fab fa-cc-paypal"></i>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

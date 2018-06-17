@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Trang quản lý</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 	<!-- Custom fonts for this template-->
+ 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<!-- Page level plugin CSS-->
+ 	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style-admin.css">
+</head>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">GTH BOOKS</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="admin.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Tổng quan</span>
+          </a>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="thongke.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Thống kê doanh thu</span>
+          </a>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="qltk.html">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Quản lý tài khoản</span>
+          </a>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Quản lý sản phẩm</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+            <li>
+              <a href="qlsp1.html">Sách trong nước</a>
+            </li>
+            <li>
+              <a href="qlsp2.html">Sách nước ngoài</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="qldh.html">
+            <i class="fa fa-fw fa-shopping-cart"></i>
+            <span class="nav-link-text">Quản lý đơn hàng</span>
+          </a>
+        </li>
+
+         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="qlslide.html">
+            <i class="fa fa-fw fa-image"></i>
+            <span class="nav-link-text">Quản lý hình ảnh</span>
+          </a>
+        </li>
+      </ul>
+      
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-envelope"></i>
+            <span class="indicator text-primary d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">Tin Nhắn Mới:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>HieuPhan</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">Chào bạn! Mình muốn mua sách Nghĩ đơn giản Sống đơn thuần mà không có.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>GiangVo</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">Chào bạn! Mình muốn mua sách Nghĩ đơn giản Sống đơn thuần mà không có.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>TrungNguyen</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">Chào bạn! Mình tên Trung, mua nhiều có giảm giá không vậy Shop?</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">Xem tất cả tin nhắn</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0 mr-lg-2">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Tìm kiếm...">
+              <span class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Bảng điều khiển</a>
+        </li>
+        <li class="breadcrumb-item active">Chung</li>
+      </ol>
+      <!-- Icon Cards-->
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-comments"></i>
+              </div>
+              <div class="mr-5">26 Tin nhắn mới!</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+              <span class="float-left">Xem chi tiết</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-success o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-shopping-cart"></i>
+              </div>
+              <div class="mr-5">23 Đơn hàng</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+              <span class="float-left">Xem chi tiết</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3"></div>
+        <div class="col-xl-3 col-sm-6 mb-3"></div>
+      </div>
+      <!-- Area Chart Example-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-area-chart"></i> Doanh thu theo tháng (VND)</div>
+        <div class="card-body">
+          <canvas id="myAreaChart" width="100%" height="30"></canvas>
+        </div>
+        <div class="card-footer small text-muted">Cập nhật lúc 11:59 PM 31-12-2018</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Example Bar Chart Card-->
+          <div class="card mb-3">
+            <div class="card-header">
+             	<i class="fa fa-bar-chart"></i> Doanh thu theo quí (VND)
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <canvas id="myBarChart" width="100" height="50"></canvas>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Cập nhật lúc 11:59 PM 31-12-2018</div>
+          </div>
+
+            <div class="card mb-3">
+              	<div class="card-header">
+             		<i class="fa fa-pie-chart"></i> Tổng doanh thu năm 2018 (VND)</div>
+          	 	<div class="card-body">
+          	 		<div class="row">
+               			<div class="col-sm-8 my-auto">
+             				<canvas id="myPieChart" width="100%" height="100"></canvas>
+             			</div>
+             			<div class="col-sm-4 text-center my-auto">
+                  			<div class="h4 mb-0" style="color:#007bff">313.964.000</div>
+			                <div class="small text-muted">Doanh thu</div>
+			                <hr>
+			                <div class="h4 mb-0" style="color:#ffc107">116.512.000</div>
+			                <div class="small text-muted">Vốn</div>
+			                <hr>
+			                <div class="h4 mb-0" style="color:#dc3545">29.219.000</div>
+			                <div class="small text-muted">Phát sinh</div>
+			                <hr>
+			                <div class="h4 mb-0" style="color:#28a745"><b>168.233.000</b></div>
+			                <div class="small text-muted"><b>Lãi</b></div>
+			            </div>
+                	</div>
+           		</div>
+           	 	<div class="card-footer small text-muted">Cập nhật lúc 11:59 PM 31-12-2018</div>
+            </div>
+          <!-- /Card Columns-->
+        </div>
+        <div class="col-lg-4">
+          <!-- Example Pie Chart Card-->
+          <div class="card mb-3">
+          </div>
+          <!-- Example Notifications Card-->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fa fa-bell-o"></i> Hoạt động gần đây</div>
+            <div class="list-group list-group-flush small">
+              <a class="list-group-item list-group-item-action" href="#">
+                <div class="media">
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <strong>Hieu Phan</strong> vừa thêm
+                    <strong>Hồi ký bà đầm thép</strong> vào giỏ hàng.
+                    <div class="text-muted smaller">Hôm nay 5:43 PM - 5 phút trước</div>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" href="#">
+                <div class="media">
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <strong>Trung Nguyen</strong> vừa gửi cho bạn 1 tin nhắn.
+                    <div class="text-muted smaller">Hôm nay 4:48 PM - 1 giờ trước</div>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" href="#">
+                <div class="media">
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <strong>Giang Vo</strong> vừa gửi cho bạn 1 tin nhắn.
+                    <div class="text-muted smaller">Hôm nay 4:54 PM - 1 giờ trước</div>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" href="#">
+                <div class="media">
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <i class="fa fa-code-fork"></i>
+                    <strong>Admin1</strong> vừa cập nhật
+                    <strong>dangky</strong> lên
+                    <strong>GitHub</strong>.
+                    <div class="text-muted smaller">Hôm nay 3:27 PM - 2 giờ trước</div>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" href="#">Xem tất cả hoạt động...</a>
+            </div>
+            <div class="card-footer small text-muted">Cập nhật lúc 11:59 PM 31-12-2018</div>
+          </div>
+        </div>
+      </div>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Quản lý tài khoản</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table style="text-align: center;" class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Tài khoản</th>
+                  <th>Mail</th>
+                  <th>SĐT</th>
+                  <th>Địa chỉ</th>
+                  <th>Tuổi</th>
+                  <th>Ngày tham gia</th>
+                  <th>Số sách đã mua</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AnDuong</td>
+                  <td>anduong@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Long An</td>
+                  <td>61</td>
+                  <td>2016/05/26</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>AnhLe</td>
+                  <td>anhle@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Cần Thơ</td>
+                  <td>63</td>
+                  <td>2011/07/25</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>AnhNguyen</td>
+                  <td>anhnguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Tây Ninh</td>
+                  <td>66</td>
+                  <td>2009/01/12</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>AnhPham</td>
+                  <td>anhpham@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Hồ Chí Minh</td>
+                  <td>22</td>
+                  <td>2012/03/29</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                 <td>BinhTran</td>
+                  <td>binhtran@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Bến Tre</td>
+                  <td>33</td>
+                  <td>2008/11/28</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>CanLe</td>
+                  <td>canle@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Huế</td>
+                  <td>61</td>
+                  <td>2012/12/02</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>ChauNguyen</td>
+                  <td>chaunguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Đà Nẵng</td>
+                  <td>59</td>
+                  <td>2012/08/06</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>CuongPham</td>
+                  <td>cuongpham@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Bình Thuận</td>
+                  <td>55</td>
+                  <td>2010/10/14</td>
+                  <td>23</td>
+                </tr>
+                <tr>
+                  <td>DuyNgo</td>
+                  <td>duyngo@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Lâm Đồng</td>
+                  <td>39</td>
+                  <td>2009/09/15</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>DuyNguyen</td>
+                  <td>duynguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Đồng Tháp</td>
+                  <td>23</td>
+                  <td>2008/12/13</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>DucHuynh</td>
+                  <td>duchuynh@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Cà Mau</td>
+                  <td>30</td>
+                  <td>2008/12/19</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>EmNguyen</td>
+                  <td>emnguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Khánh Hòa</td>
+                  <td>22</td>
+                  <td>2013/03/03</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>GiangVo</td>
+                  <td>giangvo@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Huế</td>
+                  <td>36</td>
+                  <td>2008/10/16</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>HaiVo</td>
+                  <td>haivo@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Tây Ninh</td>
+                  <td>43</td>
+                  <td>2012/12/18</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>HieuPhan</td>
+                  <td>hieuphan@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Bình Phước</td>
+                  <td>19</td>
+                  <td>2010/03/17</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>HoaLu</td>
+                  <td>hoalu@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Hà Nội</td>
+                  <td>66</td>
+                  <td>2012/11/27</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>HoangPham</td>
+                  <td>hoangpham@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Hồ Chí Minh</td>
+                  <td>64</td>
+                  <td>2010/06/09</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>HuyVo</td>
+                  <td>huyvo@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>An Giang</td>
+                  <td>59</td>
+                  <td>2009/04/10</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>KhoaNguyen</td>
+                  <td>khoanguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Vĩnh Long</td>
+                  <td>41</td>
+                  <td>2012/10/13</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>KietDuong</td>
+                  <td>kietduong@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Kiên Giang</td>
+                  <td>35</td>
+                  <td>2012/09/26</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>LocNguyen</td>
+                  <td>locnguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Vũng Tàu</td>
+                  <td>30</td>
+                  <td>2011/09/03</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>MinhNguyen</td>
+                  <td>minhnguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Đồng Nai</td>
+                  <td>40</td>
+                  <td>2009/06/25</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>NamNguyen</td>
+                  <td>namnguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Long An</td>
+                  <td>21</td>
+                  <td>2011/12/12</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>NguyenChanh</td>
+                  <td>nguyenchanh@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Huế</td>
+                  <td>23</td>
+                  <td>2010/09/20</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>TaiBien</td>
+                  <td>taibien@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Đồng Nai</td>
+                  <td>47</td>
+                  <td>2009/10/09</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td>TaiTruong</td>
+                  <td>taitruong@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Cần Thơ</td>
+                  <td>42</td>
+                  <td>2010/12/22</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>ThanhNguyen</td>
+                  <td>thanhnguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Bình Thuận</td>
+                  <td>28</td>
+                  <td>2010/11/14</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>ThaiLam</td>
+                  <td>thailam@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Phú Yên</td>
+                  <td>28</td>
+                  <td>2011/06/07</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>PhuocThanh</td>
+                  <td>phuocthanh@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Bình Định</td>
+                  <td>48</td>
+                  <td>2010/03/11</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>ThinhNguyen</td>
+                  <td>thinhnguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Gia Lai</td>
+                  <td>20</td>
+                  <td>2011/08/14</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>ThinhVo</td>
+                  <td>thinhvo@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Ninh Bình</td>
+                  <td>37</td>
+                  <td>2011/06/02</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>ThuanBui</td>
+                  <td>thuanbui@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Sóc Trăng</td>
+                  <td>53</td>
+                  <td>2009/10/22</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>TrungNguyen</td>
+                  <td>trungnguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Đồng Nai</td>
+                  <td>27</td>
+                  <td>2011/05/07</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>TruongVo</td>
+                  <td>truongvo@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Vùng Tàu</td>
+                  <td>22</td>
+                  <td>2008/10/26</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>TruongVu</td>
+                  <td>truongvu@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Bình Dương</td>
+                  <td>46</td>
+                  <td>2011/03/09</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>TuanNguyen</td>
+                  <td>tuannguyen@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Huế</td>
+                  <td>47</td>
+                  <td>2009/12/09</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>TuThai</td>
+                  <td>tuthai@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Hà Nội</td>
+                  <td>51</td>
+                  <td>2008/12/16</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>VinhLam</td>
+                  <td>vinhlam@gmail.com</td>
+                  <td>01639160511</td>
+                  <td>Bến Tre</td>
+                  <td>41</td>
+                  <td>2010/02/12</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Cập nhật lúc 11:59 PM 31-12-2018</div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright &copy 2018 by GTH - All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/admin.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/admin-datatables.js"></script>
+    <script src="js/admin-charts.js"></script>
+  </div>
+</body>
+</html>
